@@ -1,0 +1,30 @@
+import React from "react";
+import "./ProductDetails.css";
+
+interface Product {
+    name: string;
+    price: string;
+    description: string;
+    image: string;
+}
+
+const ProductDetails: React.FC<{ product: Product }> = ({ product }) => {
+    return (
+        <div className="product-details-container">
+            <div className="product-image">
+                <img src={product.image} alt={product.name} />
+            </div>
+            <div className="product-info">
+                <h2>{product.name}</h2>
+                <p className="price">{product.price}</p>
+                <p className="description">{product.description}</p>
+                <div className="actions">
+                    <button className="add-to-cart">Add to Cart</button>
+                    <button className="buy-now">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default ProductDetails;
