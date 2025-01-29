@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import { getData } from "../app/firebase/firestoreService";
-import Image from 'next/image';
+
 interface Product {
     id: string;
     name: string;
@@ -36,7 +36,7 @@ const PopularTrendingProducts = () => {
                             className={`p-4 flex flex-col ${index % 4 === 0 ? 'pl-0' : ''} ${index % 4 === 3 ? 'pr-0' : ''}`}
                         >
                             <div className="w-full h-64 relative">
-                                <Image
+                                <img
                                     src={product.image}
                                     alt={product.name}
                                     className="absolute inset-0 w-full h-full object-cover"
