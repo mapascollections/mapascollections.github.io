@@ -1,11 +1,8 @@
 'use client';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Hero() {
-    const [offsetY, setOffsetY] = useState(0);
-
     const handleScroll = () => {
-        setOffsetY(window.scrollY);
     };
 
     useEffect(() => {

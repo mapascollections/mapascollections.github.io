@@ -5,7 +5,7 @@ const Footer = () => {
     const [email, setEmail] = useState('');
     const [isSubscribed, setIsSubscribed] = useState(false);
 
-    const handleSubscribe = (e: any) => {
+    const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         if (email) {
             setIsSubscribed(true);
@@ -25,7 +25,7 @@ const Footer = () => {
                             <input
                                 type="email"
                                 value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
                                 placeholder="Enter your email"
                                 className="px-4 py-2 rounded-l-md w-full sm:w-64 text-black focus:outline-none"
                                 required

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { FaBars, FaUser } from 'react-icons/fa';
+import Image from 'next/image';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const NavBar = () => {
     return (
         <nav className="bg-white text-black px-4 py-2 flex items-center justify-between relative">
             <div style={{ paddingTop: "6px", paddingBottom: "6px", scale: 2 }} className="flex items-center gap-2">
-                <img src="/imgs/logo.png" alt="Logo" className="h-10" />
+                <Image src="/imgs/logo.png" alt="Logo" className="h-10" fill />
             </div>
             <div className="md:hidden">
                 <button
