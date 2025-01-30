@@ -28,6 +28,7 @@ const PopularTrendingProducts = () => {
             (category: any) => ({
                 id: category.id,
                 title: category.title,
+                subtitle: category.subtitle,
                 products: category.products.map((product: any) => ({
                     id: product.id,
                     name: product.name,
