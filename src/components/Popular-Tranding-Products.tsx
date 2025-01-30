@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getData } from "../app/firebase/firestoreService";
-import Image from "next/image";
-
 interface Product {
     id: string;
     name: string;
@@ -13,6 +11,7 @@ interface Product {
 interface Category {
     id: string;
     title: string;
+    subTitle?: string;
     products: Product[];
 }
 
@@ -37,29 +36,22 @@ const PopularTrendingProducts = () => {
                 })),
             })
         );
-
         setCategories(formattedCategories);
     };
 
     return (
-        <div className="pt-6 px-4 md:px-8">
+        <div className="pt-6">
             <section className="mb-8">
-                <div className="flex flex-col justify-center items-center">
-                    <h2 className="text-sm mb-1 text-gray-800">Popular Products</h2>
-                    <h2 className="text-3xl font-bold mb-4">Trending Now</h2>
-                </div>
-
                 {categories.map((category) => (
                     <div key={category.id} className="mb-8">
-                        <h3 className="text-2xl font-semibold mb-4">{category.title}</h3>
+                        <div className="flex flex-col justify-center items-center">
+                            <h2 className="text-sm mb-1 text-gray-800">{category?.subTitle}</h2>
+                            <h2 className="text-3xl font-bold mb-4">{category.title}</h2>
+                        </div>
 
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        <div className="grid grid-cols-4 gap-4">
                             {category.products.map((product, index) => (
-                                <div
-                                    key={`${product.id}-${index}`}
-                                    className={`p-4 flex flex-col ${index % 4 === 0 ? "pl-0" : ""} ${index % 4 === 3 ? "pr-0" : ""
-                                        }`}
-                                >
+                                <div key={`${product.id}-${index}`} className={`p-4 flex flex-col ${index % 4 === 0 ? 'pl-0' : ''} ${index % 4 === 3 ? 'pr-0' : ''}`}>
                                     <div className="w-full h-64 relative">
                                         <img
                                             src={product.image}

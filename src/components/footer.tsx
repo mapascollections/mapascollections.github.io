@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 const Footer = () => {
     const [email, setEmail] = useState('');
     const [isSubscribed, setIsSubscribed] = useState(false);
@@ -22,14 +22,17 @@ const Footer = () => {
                         <p className="text-sm">One-stop shop for awesome products!</p>
                     </div>
                     <div className="flex gap-4 sm:w-1/3 justify-center sm:justify-end">
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-facebook-f"></i>
+                        <a href="#" className="text-gray-500 hover:text-blue-600 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-blue-100">
+                            <FaFacebookF size={20} />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-twitter"></i>
+                        <a href="#" className="text-gray-500 hover:text-pink-500 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-pink-100">
+                            <FaInstagram size={20} />
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-instagram"></i>
+                        <a href="#" className="text-gray-500 hover:text-green-500 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-green-100">
+                            <FaWhatsapp size={20} />
+                        </a>
+                        <a href="#" className="text-gray-500 hover:text-red-600 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-red-100">
+                            <FaYoutube size={20} />
                         </a>
                     </div>
                 </div>
