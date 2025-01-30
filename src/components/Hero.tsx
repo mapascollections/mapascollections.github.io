@@ -27,10 +27,10 @@ export default function Hero() {
                         Transform Your Space with Elegant Home Decor
                     </h1>
                     <p className="text-lg md:text-xl drop-shadow-lg max-h-[6rem] leading-relaxed overflow-hidden">
-                        Discover premium furniture and decor to elevate your living space. Curated collections designed to bring comfort, style, and sophistication to your home.
+                        Discover premium decor to elevate your living space. Curated collections designed to bring comfort, style, and sophistication to your home.
                     </p>
-                    <a href="#shop-now" className="inline-block bg-yellow-500 text-gray-900 font-semibold py-3 px-6 rounded-sm shadow-lg transition-transform transform hover:scale-105">
-                        Shop Now
+                    <a href="#shop-now" className="inline-block bg-[#25D366] text-white-100 font-semibold py-3 px-6 rounded-sm shadow-lg transition-transform transform hover:scale-105">
+                        Whatsapp Now
                     </a>
                 </div>
             </div>

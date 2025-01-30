@@ -34,9 +34,7 @@ const NavBar = () => {
                 </a>
             </div>
             <div className="hidden md:flex">
-                <button className="flex items-center gap-2 text-black hover:text-yellow-400 transition">
-                    <FaUser size={18} />
-                </button>
+
             </div>
         </nav>
     );
