@@ -11,7 +11,7 @@ interface Product {
 interface Category {
     id: string;
     title: string;
-    subTitle?: string;
+    subtitle?: string;
     products: Product[];
 }
 
@@ -45,7 +45,7 @@ const PopularTrendingProducts = () => {
                 {categories.map((category) => (
                     <div key={category.id} className="mb-8">
                         <div className="flex flex-col justify-center items-center">
-                            <h2 className="text-sm mb-1 text-gray-800">{category?.subTitle}</h2>
+                            <h2 className="text-sm mb-1 text-gray-800">{category?.subtitle}</h2>
                             <h2 className="text-3xl font-bold mb-4">{category.title}</h2>
                         </div>
 
