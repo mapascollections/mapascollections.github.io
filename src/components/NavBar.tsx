@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useState } from 'react';
 import { FaBars, FaUser } from 'react-icons/fa';
 
@@ -12,7 +13,7 @@ const NavBar = () => {
     return (
         <nav className="bg-white text-black px-4 py-2 flex items-center justify-between relative">
             <div style={{ paddingTop: "6px", paddingBottom: "6px", scale: 2 }} className="flex items-center gap-2">
-                <img src="/imgs/logo.png" alt="Logo" className="h-10" />
+                <Image src="/imgs/logo.png" alt="Logo" className="h-10" width={50} height={50} />
             </div>
             <div className="md:hidden">
                 <button

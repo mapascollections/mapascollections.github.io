@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProductDetails.css";
+import Image from "next/image";
 
 interface Product {
     name: string;
@@ -12,7 +13,7 @@ const ProductDetails: React.FC<{ product: Product }> = ({ product }) => {
     return (
         <div className="product-details-container">
             <div className="product-image">
-                <img src={product.image} alt={product.name} />
+                <Image src={product.image} alt={product.name} width={100} height={50} />
             </div>
             <div className="product-info">
                 <h2>{product.name}</h2>

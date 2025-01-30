@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getData } from "../app/firebase/firestoreService";
+import Image from "next/image";
 
 interface Product {
     id: string;
