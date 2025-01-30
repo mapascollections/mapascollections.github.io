@@ -47,8 +47,8 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start">
                     <div className="mb-6 sm:mb-0 sm:w-1/3 text-center sm:text-left">
-                        <h3 className="text-lg font-semibold">Catalog Website</h3>
-                        <p className="text-sm">Your one-stop shop for amazing products</p>
+                        <h3 className="text-lg font-semibold">Mapas Collections</h3>
+                        <p className="text-sm">One-stop shop for awesome products!</p>
                     </div>
                     <div className="flex gap-4 sm:w-1/3 justify-center sm:justify-end">
                         <a href="#" className="text-gray-400 hover:text-white">
@@ -63,7 +63,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="border-t border-gray-700 pt-6 mt-6 text-center">
-                    <p className="text-sm">&copy; 2025 Catalog Website. All rights reserved.</p>
+                    <p className="text-sm">&copy; 2025 Mapas Collections. All rights reserved.</p>
                 </div>
             </div>
         </div>
