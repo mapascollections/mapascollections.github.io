@@ -71,7 +71,7 @@ const Events: React.FC = () => {
         <div className="container mx-auto p-4">
             {eventsData.events.map((section, index) => (
                 <div key={index}>
-                    <h2 className="text-xl font-bold border-b pb-2 mb-4 uppercase mt-2">{section.category} Events</h2>
+                    <h2 className="text-xl font-bold border-b pb-2 mb-4 uppercase mt-2 ">{section.category} Events</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {section.eventsList.map((event) => (
                             <div key={event.id} className="border rounded-lg p-4 shadow-md">
