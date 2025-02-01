@@ -68,14 +68,14 @@ const eventsData: EventsData = {
 
 const Events: React.FC = () => {
     return (
-        <div className="container mx-auto p-4">
+        <div className="mx-auto pb-4">
             {eventsData.events.map((section, index) => (
                 <div key={index}>
                     <h2 className="text-xl font-bold border-b pb-2 mb-4 uppercase mt-2 ">{section.category} Events</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {section.eventsList.map((event) => (
                             <div key={event.id} className="border rounded-lg p-4 shadow-md">
-                                <div className="relative h-32 bg-gray-300 rounded-md mb-4">
+                                <div className="relative bg-gray-300 h-64 rounded-md mb-4">
                                     {event.isLive && (
                                         <span className="absolute bg-red-500 text-white text-xs font-bold px-2 py-1 is-live">
                                             LIVE
