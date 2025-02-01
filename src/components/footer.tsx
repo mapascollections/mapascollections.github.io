@@ -22,16 +22,16 @@ const Footer = () => {
                         <p className="text-sm">One-stop shop for awesome products!</p>
                     </div>
                     <div className="flex gap-4 sm:w-1/3 justify-center sm:justify-end">
-                        <a href="https://www.facebook.com/mapascollections" target="_blank" className="text-gray-500 hover:text-blue-600 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-blue-100">
+                        <a href="https://www.facebook.com/mapascollections" target="_blank" className="text-gray-500 hover:text-blue-600 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-blue-100" aria-label="Mapas Collections | Facebook">
                             <FaFacebookF size={20} />
                         </a>
-                        <a href="https://www.instagram.com/mapascollections/" target="_blank" className="text-gray-500 hover:text-pink-500 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-pink-100">
+                        <a href="https://www.instagram.com/mapascollections/" target="_blank" className="text-gray-500 hover:text-pink-500 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-pink-100" aria-label="Mapas Collections | Instagram">
                             <FaInstagram size={20} />
                         </a>
-                        <a href="https://wa.me/+917709359451" target="_blank" className="text-gray-500 hover:text-green-500 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-green-100">
+                        <a href="https://wa.me/+917709359451" target="_blank" className="text-gray-500 hover:text-green-500 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-green-100" aria-label="Mapas Collections | Whatsapp">
                             <FaWhatsapp size={20} />
                         </a>
-                        <a href="https://www.youtube.com/@mapascollections" target="_blank" className="text-gray-500 hover:text-red-600 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-red-100">
+                        <a href="https://www.youtube.com/@mapascollections" target="_blank" className="text-gray-500 hover:text-red-600 transition duration-300 p-2 rounded-full bg-gray-100 hover:bg-red-100" aria-label="Mapas Collections | Youtube">
                             <FaYoutube size={20} />
                         </a>
                     </div>
