@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Hero() {
     const handleScroll = () => {
@@ -29,9 +30,13 @@ export default function Hero() {
                     <p className="text-lg md:text-xl drop-shadow-lg max-h-[6rem] leading-relaxed overflow-hidden">
                         Discover premium decor to elevate your living space. Curated collections designed to bring comfort, style, and sophistication to your home.
                     </p>
-                    <a href="https://wa.me/917709359451?text=Hi%20Mapas%20Collections!%20Need%20some%20cool%20home%20decor%20ideas!%20Let's%20talk.✨
-" target="_blank" className="inline-block bg-[#25D366] text-white-100 font-semibold py-3 px-6 rounded-sm shadow-lg transition-transform transform hover:scale-105">
-                        Whatsapp Now
+                    <a
+                        href="https://wa.me/917709359451?text=Hi%20Mapas%20Collections!%20Need%20some%20cool%20home%20decor%20ideas!%20Let's%20talk.✨"
+                        target="_blank"
+                        className="inline-flex items-center bg-[#25D366] text-white font-semibold py-3 px-6 rounded-sm shadow-lg transition-transform transform hover:scale-105"
+                    >
+                        <FaWhatsapp size={20} />
+                        <span className="ml-2">Whatsapp Now</span>
                     </a>
                 </div>
             </div>
