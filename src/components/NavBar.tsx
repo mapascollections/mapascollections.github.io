@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState } from 'react';
-import { FaBars, FaUser } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 
 const NavBar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +19,7 @@ const NavBar = () => {
                 <button
                     onClick={toggleMenu}
                     className="text-black focus:outline-none hover:text-yellow-400"
+                    aria-label="menubar"
                 >
                     <FaBars size={24} />
                 </button>
@@ -31,10 +32,7 @@ const NavBar = () => {
                     className="block py-2 md:py-0 md:inline-block text-lg hover:text-yellow-400 transition"
                 >
                     ABOUT
-                </a>
-            </div>
-            <div className="hidden md:flex">
-
+                </a>&nbsp;&nbsp;&nbsp;
             </div>
         </nav>
     );

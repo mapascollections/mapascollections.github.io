@@ -33,10 +33,10 @@ export default function Hero() {
                     <a
                         href="https://wa.me/917709359451?text=Hi%20Mapas%20Collections!%20Need%20some%20cool%20home%20decor%20ideas!%20Let's%20talk.✨"
                         target="_blank"
-                        className="inline-flex items-center bg-[#25D366] text-white font-semibold py-3 px-6 rounded-sm shadow-lg transition-transform transform hover:scale-105"
+                        className="inline-flex items-center bg-[#43b899] text-white font-semibold py-3 px-6 rounded-sm shadow-lg transition-transform transform hover:scale-105"
                     >
                         <FaWhatsapp size={20} />
-                        <span className="ml-2">Whatsapp Now</span>
+                        <span className="ml-2 font-sans">Contact Us</span>
                     </a>
                 </div>
             </div>
