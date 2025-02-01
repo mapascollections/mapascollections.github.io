@@ -19,7 +19,7 @@ const NavBar = () => {
                 <button
                     onClick={toggleMenu}
                     className="text-black focus:outline-none hover:text-yellow-400"
-                    aria-label="menubar"
+                    aria-label="menubar" aria-labelledby="menubarmobile"
                 >
                     <FaBars size={24} />
                 </button>
