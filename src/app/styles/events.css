@@ -1,0 +1,8 @@
+.is-live {
+    right: 0px;
+    width: 80px;
+    bottom: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    letter-spacing: 2px;
+}
