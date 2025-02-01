@@ -6,3 +6,11 @@
     border-bottom-left-radius: 5px;
     letter-spacing: 2px;
 }
+
+.bg-pink {
+    background-color: #cb6968;
+}
+
+.bg-pink:hover {
+    background-color: #ce5351;
+}

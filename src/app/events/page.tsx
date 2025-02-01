@@ -90,7 +90,7 @@ const Events: React.FC = () => {
                                     <p className="px-2"><FaShareAlt className="text-gray-600 text-xl cursor-pointer" /></p>
                                 </div>
                                 <hr className="mt-1 mb-1" />
-                                <button className="mt-2 w-full bg-green-400 text-white py-2 rounded hover:bg-green-500">
+                                <button className="mt-2 w-full bg-pink text-white py-2 rounded">
                                     I'll be there!
                                 </button>
                             </div>
