@@ -30,17 +30,18 @@ const NavBar = () => {
             >
                 <Link
                     href=""
-                    className="block py-2 md:py-0 md:inline-block text-lg hover:text-yellow-400 transition"
+                    className="block py-2 md:py-0 md:inline-block text-lg transition hover:text-[#cb6968]"
                 >
                     ABOUT
                 </Link>&nbsp;&nbsp;&nbsp;
                 <Link
                     href="/events"
-                    className="block py-2 md:py-0 md:inline-block text-lg hover:text-yellow-400 transition"
+                    className="block py-2 md:py-0 md:inline-block text-lg transition hover:text-[#cb6968]"
                 >
                     EVENTS
                 </Link>&nbsp;&nbsp;&nbsp;
             </div>
+
         </nav>
     );
 };

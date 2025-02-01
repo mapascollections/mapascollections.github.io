@@ -9,3 +9,15 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+.bg-primary {
+    background-color: #cb6968 !important;
+}
+
+.bg-primary:hover {
+    background-color: #ce5351 !important;
+}
+
+.text-primary {
+    background-color: #cb6968 !important;
+}
