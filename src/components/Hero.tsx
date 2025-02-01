@@ -16,7 +16,7 @@ export default function Hero() {
             <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
-                    backgroundImage: `url('/imgs/banner.png')`,
+                    backgroundImage: `url('/imgs/banner.webp')`,
                     backgroundAttachment: 'fixed',
                     zIndex: -1,
                 }}
